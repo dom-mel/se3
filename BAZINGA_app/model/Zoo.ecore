@@ -13,21 +13,65 @@
       <eOperations name="putzen" upperBound="0">
         <eParameters name="gehege" lowerBound="1" eType="#//de.beuth_hochschule.se3.zoo/Gehege"/>
       </eOperations>
-      <eOperations name="futterEntnehmen"/>
+      <eOperations name="fleischPortionEntnehmen" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt">
+        <eParameters name="futterlager" lowerBound="1" eType="#//de.beuth_hochschule.se3.zoo/Futterlager"/>
+        <eParameters name="anzahl" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </eOperations>
+      <eOperations name="vegetarischePortionEntnehmen" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt">
+        <eParameters name="futterlager" lowerBound="1" eType="#//de.beuth_hochschule.se3.zoo/Futterlager"/>
+        <eParameters name="anzahl" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </eOperations>
+      <eOperations name="fuettert">
+        <eParameters name="tier" lowerBound="1" eType="#//de.beuth_hochschule.se3.zoo/Tier"/>
+      </eOperations>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="portionenFleisch" lowerBound="1"
           eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" defaultValueLiteral="0"/>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="portionenVegetarisch"
           lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
           defaultValueLiteral="0"/>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="Tier"/>
-    <eClassifiers xsi:type="ecore:EClass" name="Besucher"/>
-    <eClassifiers xsi:type="ecore:EClass" name="Kasse"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Tier">
+      <eOperations name="dreckMachen"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Besucher">
+      <eOperations name="schautAn">
+        <eParameters name="tier" lowerBound="1" eType="#//de.beuth_hochschule.se3.zoo/Tier"/>
+      </eOperations>
+      <eOperations name="bezahlen">
+        <eParameters name="kasse" lowerBound="1" eType="#//de.beuth_hochschule.se3.zoo/Kasse"/>
+      </eOperations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Kasse">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="euros" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="Tiger" eSuperTypes="#//de.beuth_hochschule.se3.zoo/Tier #//de.beuth_hochschule.se3.zoo/Fleischfresser"/>
     <eClassifiers xsi:type="ecore:EClass" name="Pony" eSuperTypes="#//de.beuth_hochschule.se3.zoo/Tier #//de.beuth_hochschule.se3.zoo/Pflanzenfresser"/>
-    <eClassifiers xsi:type="ecore:EClass" name="Futterlager"/>
-    <eClassifiers xsi:type="ecore:EClass" name="Direktor"/>
-    <eClassifiers xsi:type="ecore:EClass" name="Fleischfresser" interface="true"/>
-    <eClassifiers xsi:type="ecore:EClass" name="Pflanzenfresser" interface="true"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Futterlager">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="portionenFleisch" lowerBound="1"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" defaultValueLiteral="0"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="portionenVegetarisch"
+          lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
+          defaultValueLiteral="0"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Direktor">
+      <eOperations name="fleischBestellen">
+        <eParameters name="anzahl" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        <eParameters name="preis" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </eOperations>
+      <eOperations name="vegetarischBestellen">
+        <eParameters name="anzahl" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        <eParameters name="preis" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </eOperations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Fleischfresser" interface="true">
+      <eOperations name="fleischEssen">
+        <eParameters name="anzahl" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </eOperations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Pflanzenfresser" interface="true">
+      <eOperations name="vegetarischEssen">
+        <eParameters name="anzahl" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+      </eOperations>
+    </eClassifiers>
   </eSubpackages>
 </ecore:EPackage>
