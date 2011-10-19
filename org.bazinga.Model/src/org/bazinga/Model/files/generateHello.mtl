@@ -1,12 +1,19 @@
 [comment encoding = UTF-8 /]
 [module generateHello('http://www.eclipse.org/emf/2002/Ecore')/]
 
-[template public generateHello(aEPackage : EPackage)]
+[template public generateHello(class : EClass)]
 	
 	[comment @main /]
-	[file (aEPackage.name.concat('.txt'), false, 'UTF-8')]
-	Hello [aEPackage.name/], what are u classes?
+	
+	[file (generateClassNameWithPackage(class), false, 'UTF-8')]
+	
 	
 	[/file]
-	
+[/template]
+
+[template public generateClassNameWithPackage(class : EClass)]
+	[if (not class.ePackage.oclIsInvalid())]
+		[class.ePackage /]
+	[/if]
+	[class.name /].java
 [/template]

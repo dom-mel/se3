@@ -6,37 +6,61 @@
     </input>
     <ownedModuleElement xsi:type="mtl:Template" name="generateHello" visibility="Public" main="true">
       <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#xA;"/>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#xA;"/>
       <body xsi:type="mtl:FileBlock" openMode="OverWrite">
-        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;Hello "/>
-        <body xsi:type="ocl.ecore:PropertyCallExp">
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#xA;&#x9;&#xA;"/>
+        <fileUrl xsi:type="mtl:TemplateInvocation" definition="/0/generateClassNameWithPackage">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-          <source xsi:type="ocl.ecore:VariableExp" name="aEPackage" referredVariable="/0/generateHello/aEPackage">
-            <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
-          </source>
-          <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/emf/2002/Ecore#//ENamedElement/name"/>
-        </body>
-        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=", what are u classes?&#xA;&#x9;&#xA;"/>
-        <fileUrl xsi:type="ocl.ecore:OperationCallExp">
-          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-          <source xsi:type="ocl.ecore:PropertyCallExp">
-            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-            <source xsi:type="ocl.ecore:VariableExp" name="aEPackage" referredVariable="/0/generateHello/aEPackage">
-              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
-            </source>
-            <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/emf/2002/Ecore#//ENamedElement/name"/>
-          </source>
-          <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=".txt">
-            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <argument xsi:type="ocl.ecore:VariableExp" name="class" referredVariable="/0/generateHello/class">
+            <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
           </argument>
-          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/concat"/>
         </fileUrl>
         <charset xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="UTF-8">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         </charset>
       </body>
+      <parameter name="class">
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+      </parameter>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Template" name="generateClassNameWithPackage" visibility="Public">
+      <body xsi:type="mtl:IfBlock">
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;"/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="class" referredVariable="/0/generateClassNameWithPackage/class">
+            <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+          </source>
+          <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/emf/2002/Ecore#//EClassifier/ePackage"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+        <ifExpr xsi:type="ocl.ecore:OperationCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+          <source xsi:type="ocl.ecore:OperationCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+            <source xsi:type="ocl.ecore:PropertyCallExp">
+              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+              <source xsi:type="ocl.ecore:VariableExp" name="class" referredVariable="/0/generateClassNameWithPackage/class">
+                <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+              </source>
+              <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/emf/2002/Ecore#//EClassifier/ePackage"/>
+            </source>
+            <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/oclIsInvalid"/>
+          </source>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean_Class/not"/>
+        </ifExpr>
+      </body>
       <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;"/>
-      <parameter name="aEPackage">
-        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+      <body xsi:type="ocl.ecore:PropertyCallExp">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <source xsi:type="ocl.ecore:VariableExp" name="class" referredVariable="/0/generateClassNameWithPackage/class">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+        </source>
+        <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/emf/2002/Ecore#//ENamedElement/name"/>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=".java"/>
+      <parameter name="class">
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
       </parameter>
     </ownedModuleElement>
   </mtl:Module>
@@ -329,8 +353,18 @@
         </eAnnotations>
         <eAnnotations source="MTL" references="/0/generateHello"/>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <eParameters name="aEPackage">
-          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+        <eParameters name="class">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="generateClassNameWithPackage">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/generateClassNameWithPackage"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="class">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
         </eParameters>
       </eOperations>
     </eClassifiers>
@@ -468,9 +502,9 @@
         </eParameters>
       </eOperations>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="EPackage_Class">
+    <eClassifiers xsi:type="ecore:EClass" name="EClass_Class">
       <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
-        <references href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+        <references href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
       </eAnnotations>
       <eOperations name="generateHello">
         <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
@@ -479,28 +513,53 @@
         <eAnnotations source="MTL" references="/0/generateHello"/>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
       </eOperations>
+      <eOperations name="generateClassNameWithPackage">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/generateClassNameWithPackage"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+      </eOperations>
     </eClassifiers>
   </ecore:EPackage>
   <ocl.ecore:Variable name="self">
     <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
     <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
     <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
@@ -508,73 +567,123 @@
   <ecore:EAnnotation source="positions">
     <eAnnotations source="positions.0" references="/0/generateHello">
       <details key="start" value="95"/>
-      <details key="end" value="296"/>
+      <details key="end" value="252"/>
       <details key="line" value="4"/>
     </eAnnotations>
     <eAnnotations source="positions.1" references="/0/generateHello/@body.0">
-      <details key="start" value="149"/>
-      <details key="end" value="151"/>
+      <details key="start" value="143"/>
+      <details key="end" value="145"/>
       <details key="line" value="5"/>
     </eAnnotations>
     <eAnnotations source="positions.2" references="/0/generateHello/@body.1">
-      <details key="start" value="171"/>
-      <details key="end" value="282"/>
+      <details key="start" value="164"/>
+      <details key="end" value="166"/>
       <details key="line" value="7"/>
     </eAnnotations>
-    <eAnnotations source="positions.3" references="/0/generateHello/@body.1/@body.0">
-      <details key="start" value="226"/>
-      <details key="end" value="233"/>
+    <eAnnotations source="positions.3" references="/0/generateHello/@body.2">
+      <details key="start" value="167"/>
+      <details key="end" value="240"/>
       <details key="line" value="8"/>
     </eAnnotations>
-    <eAnnotations source="positions.4" references="/0/generateHello/@body.1/@body.1">
-      <details key="start" value="234"/>
-      <details key="end" value="248"/>
+    <eAnnotations source="positions.4" references="/0/generateHello/@body.2/@body.0">
+      <details key="start" value="228"/>
+      <details key="end" value="232"/>
+      <details key="line" value="9"/>
+    </eAnnotations>
+    <eAnnotations source="positions.5" references="/0/generateHello/@body.2/@fileUrl">
+      <details key="start" value="174"/>
+      <details key="end" value="209"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.5" references="/0/generateHello/@body.1/@body.1/aEPackage">
-      <details key="start" value="234"/>
-      <details key="end" value="243"/>
+    <eAnnotations source="positions.6" references="/0/generateHello/@body.2/@fileUrl/class">
+      <details key="start" value="203"/>
+      <details key="end" value="208"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.6" references="/0/generateHello/@body.1/@body.2">
-      <details key="start" value="250"/>
-      <details key="end" value="274"/>
-      <details key="line" value="8"/>
-    </eAnnotations>
-    <eAnnotations source="positions.7" references="/0/generateHello/@body.1/@fileUrl">
-      <details key="start" value="178"/>
-      <details key="end" value="207"/>
+    <eAnnotations source="positions.7" references="/0/generateHello/@body.2/@charset">
+      <details key="start" value="218"/>
+      <details key="end" value="225"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.8" references="/0/generateHello/@body.1/@fileUrl/@source">
-      <details key="start" value="178"/>
-      <details key="end" value="192"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.9" references="/0/generateHello/@body.1/@fileUrl/@source/aEPackage">
-      <details key="start" value="178"/>
-      <details key="end" value="187"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.10" references="/0/generateHello/@body.1/@fileUrl/@argument.0">
-      <details key="start" value="200"/>
-      <details key="end" value="206"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.11" references="/0/generateHello/@body.1/@charset">
-      <details key="start" value="216"/>
-      <details key="end" value="223"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.12" references="/0/generateHello/@body.2">
-      <details key="start" value="283"/>
-      <details key="end" value="284"/>
-      <details key="line" value="11"/>
-    </eAnnotations>
-    <eAnnotations source="positions.13" references="/0/generateHello/aEPackage">
+    <eAnnotations source="positions.8" references="/0/generateHello/class">
       <details key="start" value="126"/>
-      <details key="end" value="146"/>
+      <details key="end" value="140"/>
       <details key="line" value="4"/>
+    </eAnnotations>
+    <eAnnotations source="positions.9" references="/0/generateClassNameWithPackage">
+      <details key="start" value="254"/>
+      <details key="end" value="419"/>
+      <details key="line" value="14"/>
+    </eAnnotations>
+    <eAnnotations source="positions.10" references="/0/generateClassNameWithPackage/@body.0">
+      <details key="start" value="318"/>
+      <details key="end" value="386"/>
+      <details key="line" value="15"/>
+    </eAnnotations>
+    <eAnnotations source="positions.11" references="/0/generateClassNameWithPackage/@body.0/@body.0">
+      <details key="start" value="359"/>
+      <details key="end" value="361"/>
+      <details key="line" value="16"/>
+    </eAnnotations>
+    <eAnnotations source="positions.12" references="/0/generateClassNameWithPackage/@body.0/@body.1">
+      <details key="start" value="362"/>
+      <details key="end" value="376"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.13" references="/0/generateClassNameWithPackage/@body.0/@body.1/class">
+      <details key="start" value="362"/>
+      <details key="end" value="367"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.14" references="/0/generateClassNameWithPackage/@body.0/@body.2">
+      <details key="start" value="379"/>
+      <details key="end" value="380"/>
+      <details key="line" value="17"/>
+    </eAnnotations>
+    <eAnnotations source="positions.15" references="/0/generateClassNameWithPackage/@body.0/@ifExpr">
+      <details key="start" value="322"/>
+      <details key="end" value="357"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.16" references="/0/generateClassNameWithPackage/@body.0/@ifExpr/@source">
+      <details key="start" value="327"/>
+      <details key="end" value="356"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.17" references="/0/generateClassNameWithPackage/@body.0/@ifExpr/@source/@source">
+      <details key="start" value="327"/>
+      <details key="end" value="341"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.18" references="/0/generateClassNameWithPackage/@body.0/@ifExpr/@source/@source/class">
+      <details key="start" value="327"/>
+      <details key="end" value="332"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.19" references="/0/generateClassNameWithPackage/@body.1">
+      <details key="start" value="387"/>
+      <details key="end" value="388"/>
+      <details key="line" value="18"/>
+    </eAnnotations>
+    <eAnnotations source="positions.20" references="/0/generateClassNameWithPackage/@body.2">
+      <details key="start" value="389"/>
+      <details key="end" value="399"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.21" references="/0/generateClassNameWithPackage/@body.2/class">
+      <details key="start" value="389"/>
+      <details key="end" value="394"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.22" references="/0/generateClassNameWithPackage/@body.3">
+      <details key="start" value="402"/>
+      <details key="end" value="407"/>
+      <details key="line" value="18"/>
+    </eAnnotations>
+    <eAnnotations source="positions.23" references="/0/generateClassNameWithPackage/class">
+      <details key="start" value="300"/>
+      <details key="end" value="314"/>
+      <details key="line" value="14"/>
     </eAnnotations>
   </ecore:EAnnotation>
 </xmi:XMI>
