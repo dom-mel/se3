@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_gsIfkPpREeCFRKz2oXKjjQ" type="EcoreTools" name="Zoo" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_7fWDYPpREeCFRKz2oXKjjQ" type="1002">
+    <children xmi:type="notation:Node" xmi:id="_7fX4kPpREeCFRKz2oXKjjQ" type="4006"/>
+    <children xmi:type="notation:Node" xmi:id="_7fX4kfpREeCFRKz2oXKjjQ" type="5003">
+      <children xmi:type="notation:Node" xmi:id="_Ec-swPpSEeCFRKz2oXKjjQ" type="2003">
+        <children xmi:type="notation:Node" xmi:id="_Ec_T0PpSEeCFRKz2oXKjjQ" type="4002"/>
+        <children xmi:type="notation:Node" xmi:id="_Ec_64PpSEeCFRKz2oXKjjQ" type="5004">
+          <styles xmi:type="notation:DrawerStyle" xmi:id="_Ec_64fpSEeCFRKz2oXKjjQ"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_Ec_64vpSEeCFRKz2oXKjjQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_Ec_64_pSEeCFRKz2oXKjjQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_EdAh8PpSEeCFRKz2oXKjjQ" type="5005">
+          <styles xmi:type="notation:DrawerStyle" xmi:id="_EdAh8fpSEeCFRKz2oXKjjQ"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_EdAh8vpSEeCFRKz2oXKjjQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_EdAh8_pSEeCFRKz2oXKjjQ"/>
+        </children>
+        <styles xmi:type="notation:ShapeStyle" xmi:id="_Ec-swfpSEeCFRKz2oXKjjQ" fontColor="4210752" fontName="Ubuntu" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+        <element xmi:type="ecore:EClass" href="Zoo.ecore#//de.beuth_hochschule.se3.zoo/Gehege"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Ec-swvpSEeCFRKz2oXKjjQ" x="61" y="62"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_FMca0PpSEeCFRKz2oXKjjQ" type="2003">
+        <children xmi:type="notation:Node" xmi:id="_FMdB4PpSEeCFRKz2oXKjjQ" type="4002"/>
+        <children xmi:type="notation:Node" xmi:id="_FMdo8PpSEeCFRKz2oXKjjQ" type="5004">
+          <styles xmi:type="notation:DrawerStyle" xmi:id="_FMdo8fpSEeCFRKz2oXKjjQ"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_FMdo8vpSEeCFRKz2oXKjjQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_FMdo8_pSEeCFRKz2oXKjjQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_FMeQAPpSEeCFRKz2oXKjjQ" type="5005">
+          <styles xmi:type="notation:DrawerStyle" xmi:id="_FMeQAfpSEeCFRKz2oXKjjQ"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_FMeQAvpSEeCFRKz2oXKjjQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_FMeQA_pSEeCFRKz2oXKjjQ"/>
+        </children>
+        <styles xmi:type="notation:ShapeStyle" xmi:id="_FMca0fpSEeCFRKz2oXKjjQ" fontColor="4210752" fontName="Ubuntu" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+        <element xmi:type="ecore:EClass" href="Zoo.ecore#//de.beuth_hochschule.se3.zoo/Pfleger"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FMca0vpSEeCFRKz2oXKjjQ" x="268" y="65"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_FwEsUPpSEeCFRKz2oXKjjQ" type="2003">
+        <children xmi:type="notation:Node" xmi:id="_FwF6cPpSEeCFRKz2oXKjjQ" type="4002"/>
+        <children xmi:type="notation:Node" xmi:id="_FwGhgPpSEeCFRKz2oXKjjQ" type="5004">
+          <styles xmi:type="notation:DrawerStyle" xmi:id="_FwGhgfpSEeCFRKz2oXKjjQ"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_FwGhgvpSEeCFRKz2oXKjjQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_FwGhg_pSEeCFRKz2oXKjjQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_FwGhhPpSEeCFRKz2oXKjjQ" type="5005">
+          <styles xmi:type="notation:DrawerStyle" xmi:id="_FwGhhfpSEeCFRKz2oXKjjQ"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_FwHIkPpSEeCFRKz2oXKjjQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_FwHIkfpSEeCFRKz2oXKjjQ"/>
+        </children>
+        <styles xmi:type="notation:ShapeStyle" xmi:id="_FwEsUfpSEeCFRKz2oXKjjQ" fontColor="4210752" fontName="Ubuntu" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+        <element xmi:type="ecore:EClass" href="Zoo.ecore#//de.beuth_hochschule.se3.zoo/Tier"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FwEsUvpSEeCFRKz2oXKjjQ" x="205" y="278"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_GSQzYPpSEeCFRKz2oXKjjQ" type="2003">
+        <children xmi:type="notation:Node" xmi:id="_GSSBgPpSEeCFRKz2oXKjjQ" type="4002"/>
+        <children xmi:type="notation:Node" xmi:id="_GSSBgfpSEeCFRKz2oXKjjQ" type="5004">
+          <styles xmi:type="notation:DrawerStyle" xmi:id="_GSSBgvpSEeCFRKz2oXKjjQ"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_GSSokPpSEeCFRKz2oXKjjQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_GSSokfpSEeCFRKz2oXKjjQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_GSSokvpSEeCFRKz2oXKjjQ" type="5005">
+          <styles xmi:type="notation:DrawerStyle" xmi:id="_GSSok_pSEeCFRKz2oXKjjQ"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_GSSolPpSEeCFRKz2oXKjjQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_GSSolfpSEeCFRKz2oXKjjQ"/>
+        </children>
+        <styles xmi:type="notation:ShapeStyle" xmi:id="_GSQzYfpSEeCFRKz2oXKjjQ" fontColor="4210752" fontName="Ubuntu" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+        <element xmi:type="ecore:EClass" href="Zoo.ecore#//de.beuth_hochschule.se3.zoo/Besucher"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GSQzYvpSEeCFRKz2oXKjjQ" x="64" y="141"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_G6lXoPpSEeCFRKz2oXKjjQ" type="2003">
+        <children xmi:type="notation:Node" xmi:id="_G6mlwPpSEeCFRKz2oXKjjQ" type="4002"/>
+        <children xmi:type="notation:Node" xmi:id="_G6mlwfpSEeCFRKz2oXKjjQ" type="5004">
+          <styles xmi:type="notation:DrawerStyle" xmi:id="_G6mlwvpSEeCFRKz2oXKjjQ"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_G6mlw_pSEeCFRKz2oXKjjQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_G6mlxPpSEeCFRKz2oXKjjQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_G6nM0PpSEeCFRKz2oXKjjQ" type="5005">
+          <styles xmi:type="notation:DrawerStyle" xmi:id="_G6nM0fpSEeCFRKz2oXKjjQ"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_G6nM0vpSEeCFRKz2oXKjjQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_G6nM0_pSEeCFRKz2oXKjjQ"/>
+        </children>
+        <styles xmi:type="notation:ShapeStyle" xmi:id="_G6lXofpSEeCFRKz2oXKjjQ" fontColor="4210752" fontName="Ubuntu" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+        <element xmi:type="ecore:EClass" href="Zoo.ecore#//de.beuth_hochschule.se3.zoo/Kasse"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_G6lXovpSEeCFRKz2oXKjjQ" x="268" y="153"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_HaaHMPpSEeCFRKz2oXKjjQ" type="2003">
+        <children xmi:type="notation:Node" xmi:id="_HaauQPpSEeCFRKz2oXKjjQ" type="4002"/>
+        <children xmi:type="notation:Node" xmi:id="_HabVUPpSEeCFRKz2oXKjjQ" type="5004">
+          <styles xmi:type="notation:DrawerStyle" xmi:id="_HabVUfpSEeCFRKz2oXKjjQ"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_HabVUvpSEeCFRKz2oXKjjQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_HabVU_pSEeCFRKz2oXKjjQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_Hab8YPpSEeCFRKz2oXKjjQ" type="5005">
+          <styles xmi:type="notation:DrawerStyle" xmi:id="_Hab8YfpSEeCFRKz2oXKjjQ"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_Hab8YvpSEeCFRKz2oXKjjQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_Hab8Y_pSEeCFRKz2oXKjjQ"/>
+        </children>
+        <styles xmi:type="notation:ShapeStyle" xmi:id="_HaaHMfpSEeCFRKz2oXKjjQ" fontColor="4210752" fontName="Ubuntu" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+        <element xmi:type="ecore:EClass" href="Zoo.ecore#//de.beuth_hochschule.se3.zoo/Tiger"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HaaHMvpSEeCFRKz2oXKjjQ" x="360" y="213"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_I6A4wPpSEeCFRKz2oXKjjQ" type="2003">
+        <children xmi:type="notation:Node" xmi:id="_I6Bf0PpSEeCFRKz2oXKjjQ" type="4002"/>
+        <children xmi:type="notation:Node" xmi:id="_I6CG4PpSEeCFRKz2oXKjjQ" type="5004">
+          <styles xmi:type="notation:DrawerStyle" xmi:id="_I6CG4fpSEeCFRKz2oXKjjQ"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_I6CG4vpSEeCFRKz2oXKjjQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_I6CG4_pSEeCFRKz2oXKjjQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_I6Ct8PpSEeCFRKz2oXKjjQ" type="5005">
+          <styles xmi:type="notation:DrawerStyle" xmi:id="_I6Ct8fpSEeCFRKz2oXKjjQ"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_I6Ct8vpSEeCFRKz2oXKjjQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_I6Ct8_pSEeCFRKz2oXKjjQ"/>
+        </children>
+        <styles xmi:type="notation:ShapeStyle" xmi:id="_I6A4wfpSEeCFRKz2oXKjjQ" fontColor="4210752" fontName="Ubuntu" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+        <element xmi:type="ecore:EClass" href="Zoo.ecore#//de.beuth_hochschule.se3.zoo/Ponnies"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_I6A4wvpSEeCFRKz2oXKjjQ" x="59" y="205"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_J3z9wPpSEeCFRKz2oXKjjQ" type="2003">
+        <children xmi:type="notation:Node" xmi:id="_J31L4PpSEeCFRKz2oXKjjQ" type="4002"/>
+        <children xmi:type="notation:Node" xmi:id="_J31L4fpSEeCFRKz2oXKjjQ" type="5004">
+          <styles xmi:type="notation:DrawerStyle" xmi:id="_J31L4vpSEeCFRKz2oXKjjQ"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_J31L4_pSEeCFRKz2oXKjjQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_J31L5PpSEeCFRKz2oXKjjQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_J31y8PpSEeCFRKz2oXKjjQ" type="5005">
+          <styles xmi:type="notation:DrawerStyle" xmi:id="_J31y8fpSEeCFRKz2oXKjjQ"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_J31y8vpSEeCFRKz2oXKjjQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_J31y8_pSEeCFRKz2oXKjjQ"/>
+        </children>
+        <styles xmi:type="notation:ShapeStyle" xmi:id="_J3z9wfpSEeCFRKz2oXKjjQ" fontColor="4210752" fontName="Ubuntu" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+        <element xmi:type="ecore:EClass" href="Zoo.ecore#//de.beuth_hochschule.se3.zoo/Futterlager"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_J3z9wvpSEeCFRKz2oXKjjQ" x="455" y="48"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_KrbMAPpSEeCFRKz2oXKjjQ" type="2003">
+        <children xmi:type="notation:Node" xmi:id="_KrcaIPpSEeCFRKz2oXKjjQ" type="4002"/>
+        <children xmi:type="notation:Node" xmi:id="_KrdBMPpSEeCFRKz2oXKjjQ" type="5004">
+          <styles xmi:type="notation:DrawerStyle" xmi:id="_KrdBMfpSEeCFRKz2oXKjjQ"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_KrdBMvpSEeCFRKz2oXKjjQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_KrdBM_pSEeCFRKz2oXKjjQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_KrdBNPpSEeCFRKz2oXKjjQ" type="5005">
+          <styles xmi:type="notation:DrawerStyle" xmi:id="_KrdBNfpSEeCFRKz2oXKjjQ"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_KrdBNvpSEeCFRKz2oXKjjQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_KrdoQPpSEeCFRKz2oXKjjQ"/>
+        </children>
+        <styles xmi:type="notation:ShapeStyle" xmi:id="_KrbMAfpSEeCFRKz2oXKjjQ" fontColor="4210752" fontName="Ubuntu" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+        <element xmi:type="ecore:EClass" href="Zoo.ecore#//de.beuth_hochschule.se3.zoo/Direktor"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KrbMAvpSEeCFRKz2oXKjjQ" x="504" y="242"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_L7Wi0PpSEeCFRKz2oXKjjQ" type="2003">
+        <children xmi:type="notation:Node" xmi:id="_L7XJ4PpSEeCFRKz2oXKjjQ" type="4002"/>
+        <children xmi:type="notation:Node" xmi:id="_L7Xw8PpSEeCFRKz2oXKjjQ" type="5004">
+          <styles xmi:type="notation:DrawerStyle" xmi:id="_L7Xw8fpSEeCFRKz2oXKjjQ"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_L7Xw8vpSEeCFRKz2oXKjjQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_L7Xw8_pSEeCFRKz2oXKjjQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_L7Xw9PpSEeCFRKz2oXKjjQ" type="5005">
+          <styles xmi:type="notation:DrawerStyle" xmi:id="_L7YYAPpSEeCFRKz2oXKjjQ"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_L7YYAfpSEeCFRKz2oXKjjQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_L7YYAvpSEeCFRKz2oXKjjQ"/>
+        </children>
+        <styles xmi:type="notation:ShapeStyle" xmi:id="_L7Wi0fpSEeCFRKz2oXKjjQ" fontColor="4210752" fontName="Ubuntu" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+        <element xmi:type="ecore:EClass" href="Zoo.ecore#//de.beuth_hochschule.se3.zoo/Fleischfresser"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L7Wi0vpSEeCFRKz2oXKjjQ" x="75" y="318"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_NYhrcPpSEeCFRKz2oXKjjQ" type="2003">
+        <children xmi:type="notation:Node" xmi:id="_NYiSgPpSEeCFRKz2oXKjjQ" type="4002"/>
+        <children xmi:type="notation:Node" xmi:id="_NYi5kPpSEeCFRKz2oXKjjQ" type="5004">
+          <styles xmi:type="notation:DrawerStyle" xmi:id="_NYi5kfpSEeCFRKz2oXKjjQ"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_NYi5kvpSEeCFRKz2oXKjjQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_NYi5k_pSEeCFRKz2oXKjjQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_NYjgoPpSEeCFRKz2oXKjjQ" type="5005">
+          <styles xmi:type="notation:DrawerStyle" xmi:id="_NYjgofpSEeCFRKz2oXKjjQ"/>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_NYjgovpSEeCFRKz2oXKjjQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_NYjgo_pSEeCFRKz2oXKjjQ"/>
+        </children>
+        <styles xmi:type="notation:ShapeStyle" xmi:id="_NYhrcfpSEeCFRKz2oXKjjQ" fontColor="4210752" fontName="Ubuntu" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+        <element xmi:type="ecore:EClass" href="Zoo.ecore#//de.beuth_hochschule.se3.zoo/Pflanzenfresser"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NYhrcvpSEeCFRKz2oXKjjQ" x="320" y="333"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_7fX4kvpREeCFRKz2oXKjjQ"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_7fX4k_pREeCFRKz2oXKjjQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_7fX4lPpREeCFRKz2oXKjjQ"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_7fWDYfpREeCFRKz2oXKjjQ" fontColor="4210752" fontName="Ubuntu" fontHeight="10" fillColor="13150135" lineColor="4210752"/>
+    <styles xmi:type="notation:MultiDiagramLinkStyle" xmi:id="_7fWDYvpREeCFRKz2oXKjjQ"/>
+    <element xmi:type="ecore:EPackage" href="Zoo.ecore#//de.beuth_hochschule.se3.zoo"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7fWDY_pREeCFRKz2oXKjjQ" width="833" height="503"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_gsIfkfpREeCFRKz2oXKjjQ"/>
+  <element xmi:type="ecore:EPackage" href="Zoo.ecore#/"/>
+</notation:Diagram>
