@@ -1,0 +1,16 @@
+[comment encoding = UTF-8 /]
+[module generateHello('http://www.eclipse.org/emf/2002/Ecore')/]
+
+[template public generateHello(class : EClass)]
+	
+	[comment @main /]
+	[file (class.name.concat('.txt'), false, 'UTF-8')]
+	
+	
+	[/file]
+	
+[/template]
+
+[query public getClassName(class : EClass) : EString = a]
+
+[/query]

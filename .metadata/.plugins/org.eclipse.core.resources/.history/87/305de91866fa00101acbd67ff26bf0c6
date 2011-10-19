@@ -1,0 +1,22 @@
+[comment encoding = UTF-8 /]
+[module generateHello('http://www.eclipse.org/emf/2002/Ecore')/]
+
+[template public generateHello(class : EClass)]
+	
+	[comment @main /]
+	
+	[file (generateClassNameWithPackage(class), false, 'UTF-8')]
+	
+	
+	[/file]
+[/template]
+
+[template public generateClassNameWithPackage(class : EClass)]
+	[if (not class.ePackage.oclIsInvalid())]
+		[for (subpackage : EPackage | class.ePackage.eSubpackages) ]
+			[subpackage.name.concat('/') /]
+		[/for]
+		
+	[/if]
+	[class.name /].java
+[/template]
