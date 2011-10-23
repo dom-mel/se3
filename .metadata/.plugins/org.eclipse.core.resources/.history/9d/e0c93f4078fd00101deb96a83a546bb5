@@ -12,7 +12,6 @@ public [getStruct(class) /] [class.name.toUpperFirst()/] [getSuperClasses(class)
 
 [generateAttributes(class) /]
 
-[generateReferenceValues(class) /]
 
 }
 
@@ -22,7 +21,7 @@ public [getStruct(class) /] [class.name.toUpperFirst()/] [getSuperClasses(class)
 [template public generateReferenceValues(class : EClass)]
 [for (reference : EReference | class.eAllReferences) ]
 	private [if reference.upperBound>1]Set<[/if][reference.eReferenceType.name /][if reference.upperBound>1]>[/if]
-    [if reference.name.size() > 0][reference.name /][else][reference.eReferenceType.name.toUpperFirst() /][/if];
+    [if reference.name.size() > 0][reference.name /][else][reference.eReferenceType.name /][/if]
 [/for]
 [/template]
 
