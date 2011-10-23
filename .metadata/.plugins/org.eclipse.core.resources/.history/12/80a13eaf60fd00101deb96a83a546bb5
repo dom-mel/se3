@@ -1,0 +1,14 @@
+[comment encoding = UTF-8 /]
+[**
+ * The documentation of the module javaNamespace.
+ */]
+[module javaNamespace('http://www.eclipse.org/emf/2002/Ecore')]
+
+
+[**
+ * The documentation of the template getNamespace.
+ * @param aEClass
+ */]
+[template public getNamespace(aEClass : EClass)]
+
+[/template]

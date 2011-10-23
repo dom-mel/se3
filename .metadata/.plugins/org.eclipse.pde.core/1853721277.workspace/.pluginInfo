@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+	<bundle bundleID="1089" class="org.bazinga.Model.Activator" localization="OSGI-INF/l10n/bundle" name="Acceleo Model Module Runtime Plug-in" project="org.bazinga.Model" provider="Eclipse Modeling Project"/>
+	<bundle bundleID="1090" localization="OSGI-INF/l10n/bundle" name="BAZINGA_app" project="BAZINGA_app"/>
+</map>

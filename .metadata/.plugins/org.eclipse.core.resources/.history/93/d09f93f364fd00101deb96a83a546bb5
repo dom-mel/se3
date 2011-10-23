@@ -1,0 +1,17 @@
+[comment encoding = UTF-8 /]
+[module generateHello('http://www.eclipse.org/emf/2002/Ecore')/]
+
+[template public generateHello(class : EClass)]
+	
+	[comment @main /]
+	
+	[file (class.ePackage.name.concat('/').concat(class.name.toUpperFirst()), false, 'UTF-8')]
+package [class.ePackage.name /];
+
+public class [class.name.toUpperFirst()/] {
+
+
+}
+
+	[/file]
+[/template]

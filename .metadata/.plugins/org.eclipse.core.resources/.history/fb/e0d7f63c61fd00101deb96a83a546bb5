@@ -1,0 +1,14 @@
+[comment encoding = UTF-8 /]
+[module generateHello('http://www.eclipse.org/emf/2002/Ecore')/]
+[import org::bazinga::Model::files::javaNamespace /]
+
+[template public generateHello(class : EClass)]
+	
+	[comment @main /]
+	
+
+	[file (generateClassNameWithPackage(class), false, 'UTF-8')]
+	
+	
+	[/file]
+[/template]

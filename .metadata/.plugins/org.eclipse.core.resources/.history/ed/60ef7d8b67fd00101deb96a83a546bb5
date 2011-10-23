@@ -1,0 +1,32 @@
+[comment encoding = UTF-8 /]
+[module generateHello('http://www.eclipse.org/emf/2002/Ecore')/]
+
+[template public generateHello(class : EClass)]
+	
+	[comment @main /]
+	
+	[file (class.ePackage.name.concat('/').concat(class.name.toUpperFirst()).concat('.java'), false, 'UTF-8')]
+package [class.ePackage.name /];
+
+public [if class.interface]interface[else]class[/if] [class.name.toUpperFirst()/] {
+
+[generateAttributes(class) /]
+
+}
+
+	[/file]
+[/template]
+
+[template public generateAttributes(class : EClass)]
+[if not class.interface]
+	[for (attribute : EAttribute | class.eAllAttributes)]
+	private [attribute.eType.name.toUpperFirst() /] [attribute.name /]; 
+	[/for]
+[/if]
+[/template]
+
+[template public getType(type : ETypedElement)]
+[if type.oclIsTypeOf(EBoolean)]boolean
+[elseif type.oclIsTypeOf(EInt)]int
+[/if]
+[/template]
