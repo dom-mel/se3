@@ -17,7 +17,6 @@ public [getStruct(class) /] [class.name.toUpperFirst()/] [getSuperClasses(class)
 [generateMethods(class) /]
 
 [generateGetterSetters(class) /]
-[generateSuperMethods(class) /]
 
 }
 	[/file]
@@ -75,14 +74,13 @@ public [getStruct(class) /] [class.name.toUpperFirst()/] [getSuperClasses(class)
 [/template]
 
 [template public generateSuperMethods(class:EClass)]
-[if not class.interface and not class.abstract]
+[if not class.interface]
 [for (superClass : EClass | class.eSuperTypes->select(e:EClass|e.interface)->asSet())]
 [for (operation : EOperation | superClass.eAllOperations)]
 	public [getListType(operation) /] [operation.name /]([generateParameters(operation) /]){
 		throw new UnsupportedOperationException();
 	}
 [/for]
-[generateSuperMethods(superClass) /]
 [/for]
 [/if]
 [/template]

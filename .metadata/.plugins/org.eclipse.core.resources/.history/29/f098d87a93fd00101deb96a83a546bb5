@@ -17,7 +17,6 @@ public [getStruct(class) /] [class.name.toUpperFirst()/] [getSuperClasses(class)
 [generateMethods(class) /]
 
 [generateGetterSetters(class) /]
-[generateSuperMethods(class) /]
 
 }
 	[/file]
@@ -34,12 +33,13 @@ public [getStruct(class) /] [class.name.toUpperFirst()/] [getSuperClasses(class)
 [/for]
 [for (attribute : EAttribute | class.eAllAttributes) ]
 	public [getListType(attribute) /] get[attribute.name.toUpperFirst() /]() {
-		return [attribute.name /];
+		return [attribute.name.toUpperFirst() /];
 	}
-	public void set[attribute.name.toUpperFirst() /]([getListType(attribute) /] newValue) {
-		[attribute.name /] = newValue;
+	public void set[attribute.name.toUpperFirst() /]([getSetType(reference) /] newValue) {
+		[referenceName(reference) /] = newValue;
     }
 [/for]
+
 [/template]
 
 [template public generateMethods(class : EClass)]
@@ -71,19 +71,6 @@ public [getStruct(class) /] [class.name.toUpperFirst()/] [getSuperClasses(class)
 [/if]
 [if class.eSuperTypes->select(e : EClass | e.interface)->notEmpty()] implements
 [class.eSuperTypes->select(e : EClass | e.interface)->collect(e|e.name)->asSet()->sep(',') /] 
-[/if]
-[/template]
-
-[template public generateSuperMethods(class:EClass)]
-[if not class.interface and not class.abstract]
-[for (superClass : EClass | class.eSuperTypes->select(e:EClass|e.interface)->asSet())]
-[for (operation : EOperation | superClass.eAllOperations)]
-	public [getListType(operation) /] [operation.name /]([generateParameters(operation) /]){
-		throw new UnsupportedOperationException();
-	}
-[/for]
-[generateSuperMethods(superClass) /]
-[/for]
 [/if]
 [/template]
 

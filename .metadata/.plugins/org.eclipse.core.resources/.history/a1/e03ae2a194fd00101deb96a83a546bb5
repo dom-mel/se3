@@ -82,7 +82,6 @@ public [getStruct(class) /] [class.name.toUpperFirst()/] [getSuperClasses(class)
 		throw new UnsupportedOperationException();
 	}
 [/for]
-[generateSuperMethods(superClass) /]
 [/for]
 [/if]
 [/template]
