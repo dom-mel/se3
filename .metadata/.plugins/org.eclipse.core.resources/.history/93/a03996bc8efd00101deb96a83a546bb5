@@ -14,27 +14,20 @@ public [getStruct(class) /] [class.name.toUpperFirst()/] [getSuperClasses(class)
 
 [generateReferenceValues(class) /]
 
-[generateMethods(class) /]
-
 }
 	[/file]
 [/template]
 
 [template public generateMethods(class : EClass)]
-[for (operation : EOperation | class.eAllOperations)]
-	public [getListType(operation) /] [operation.name /]([generateParameters(operation) /]) {
-		throw new UnsupportedOperationException();
-	}
-[/for]
-[/template]
+[for (operations : EOperation | class.eAllOperations)]
 
-[template public generateParameters(operation : EOperation)]
-[ operation.eParameters->collect(e| getListType(e) + ' ' + e.name)->sep(',') /]
+[/for]
 [/template]
 
 [template public generateReferenceValues(class : EClass)]
 [for (reference : EReference | class.eAllReferences) ]
-	private [getSetType(reference) /] [if reference.name.size() > 0][reference.name /][else][reference.eReferenceType.name.toUpperFirst() /][/if];
+	private [if reference.upperBound>1]Set<[/if][reference.eReferenceType.name /][if reference.upperBound>1]>[/if]
+    [if reference.name.size() > 0][reference.name /][else][reference.eReferenceType.name.toUpperFirst() /][/if];
 [/for]
 [/template]
 
@@ -59,19 +52,10 @@ public [getStruct(class) /] [class.name.toUpperFirst()/] [getSuperClasses(class)
 [/if]
 [/template]
 
-[template public getSetType(type : ETypedElement)]
-[if type.many or type.upperBound > 1]Set<[/if][getType(type) /][if type.many or type.upperBound > 1]>[/if]
-[/template]
-
-[template public getListType(type : ETypedElement)]
-[if type.many or type.upperBound > 1]List<[/if][getType(type) /][if type.many or type.upperBound > 1]>[/if]
-[/template]
-
 [template public getType(type : ETypedElement)]
 [if type.eType=EBoolean]boolean
 [elseif type.eType=EInt]int
 [elseif type.eType=EString]String
-[elseif type.eType.oclIsUndefined()]void
 [else][type.eType.name /]
 [/if]
 [/template]

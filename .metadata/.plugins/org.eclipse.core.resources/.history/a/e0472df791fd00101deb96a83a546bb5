@@ -34,7 +34,8 @@ public [getStruct(class) /] [class.name.toUpperFirst()/] [getSuperClasses(class)
 
 [template public generateReferenceValues(class : EClass)]
 [for (reference : EReference | class.eAllReferences) ]
-	private [getSetType(reference) /] [if reference.name.size() > 0][reference.name /][else][reference.eReferenceType.name.toUpperFirst() /][/if];
+	private [getSetType(reference) /]
+    [if reference.name.size() > 0][reference.name /][else][reference.eReferenceType.name.toUpperFirst() /][/if];
 [/for]
 [/template]
 

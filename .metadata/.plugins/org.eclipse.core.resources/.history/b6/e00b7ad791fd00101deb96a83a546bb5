@@ -34,7 +34,8 @@ public [getStruct(class) /] [class.name.toUpperFirst()/] [getSuperClasses(class)
 
 [template public generateReferenceValues(class : EClass)]
 [for (reference : EReference | class.eAllReferences) ]
-	private [getSetType(reference) /] [if reference.name.size() > 0][reference.name /][else][reference.eReferenceType.name.toUpperFirst() /][/if];
+	private [getSetType(reference) /]
+    [if reference.name.size() > 0][reference.name /][else][reference.eReferenceType.name.toUpperFirst() /][/if];
 [/for]
 [/template]
 
@@ -60,11 +61,11 @@ public [getStruct(class) /] [class.name.toUpperFirst()/] [getSuperClasses(class)
 [/template]
 
 [template public getSetType(type : ETypedElement)]
-[if type.many or type.upperBound > 1]Set<[/if][getType(type) /][if type.many or type.upperBound > 1]>[/if]
+[if type.many or type.upperBound > 1]Set<[/if] [getType(type)][if type.many or type.upperBound > 1]>[/if]
 [/template]
 
 [template public getListType(type : ETypedElement)]
-[if type.many or type.upperBound > 1]List<[/if][getType(type) /][if type.many or type.upperBound > 1]>[/if]
+[if type.many or type.upperBound > 1]List<[/if] [getType(type)][if type.many or type.upperBound > 1]>[/if]
 [/template]
 
 [template public getType(type : ETypedElement)]
