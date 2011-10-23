@@ -5,7 +5,7 @@
 	
 	[comment @main /]
 	
-	[file (class.ePackage.name.replaceAll('\\.', '/').concat('/').concat(class.name.toUpperFirst()).concat('.java'), false, 'UTF-8')]
+	[file (class.ePackage.name.concat('/').concat(class.name.toUpperFirst()).concat('.java'), false, 'UTF-8')]
 package [class.ePackage.name /];
 
 public [getStruct(class) /] [class.name.toUpperFirst()/] [getSuperClasses(class) /] {
