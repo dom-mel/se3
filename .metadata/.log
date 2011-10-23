@@ -2606,3 +2606,443 @@ java.lang.UnsupportedOperationException
 	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:928)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1132)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.acceleo.engine 2 2 2011-10-23 14:52:07.923
+!MESSAGE Unresolved compilation error in generation module.
+!STACK 0
+org.eclipse.acceleo.engine.AcceleoEvaluationException: Unresolved compilation error in generation module.
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.switchExpression(AcceleoEvaluationVisitor.java:1663)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.visitExpression(AcceleoEvaluationVisitor.java:999)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.visitAcceleoFileBlock(AcceleoEvaluationVisitor.java:338)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.switchExpression(AcceleoEvaluationVisitor.java:1691)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.visitExpression(AcceleoEvaluationVisitor.java:999)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.visitAcceleoTemplate(AcceleoEvaluationVisitor.java:867)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.switchExpression(AcceleoEvaluationVisitor.java:1671)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.visitExpression(AcceleoEvaluationVisitor.java:999)
+	at org.eclipse.ocl.internal.evaluation.QueryImpl.evaluate(QueryImpl.java:152)
+	at org.eclipse.ocl.ecore.QueryImpl.evaluate(QueryImpl.java:62)
+	at org.eclipse.acceleo.engine.generation.AcceleoEngine.doEvaluate(AcceleoEngine.java:280)
+	at org.eclipse.acceleo.engine.generation.AcceleoEngine.evaluate(AcceleoEngine.java:145)
+	at org.eclipse.acceleo.engine.service.AcceleoService.doGenerateTemplate(AcceleoService.java:869)
+	at org.eclipse.acceleo.engine.service.AcceleoService.doGenerate(AcceleoService.java:585)
+	at org.eclipse.acceleo.engine.service.AbstractAcceleoGenerator.generate(AbstractAcceleoGenerator.java:188)
+	at org.eclipse.acceleo.engine.service.AbstractAcceleoGenerator.doGenerate(AbstractAcceleoGenerator.java:158)
+	at org.bazinga.Model.files.GenerateHello.doGenerate(GenerateHello.java:190)
+	at org.eclipse.acceleo.ide.ui.launching.strategy.AcceleoLaunchOperation.run(AcceleoLaunchOperation.java:133)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2326)
+	at org.eclipse.acceleo.ide.ui.launching.strategy.AcceleoPluginLaunchingStrategy.launch(AcceleoPluginLaunchingStrategy.java:225)
+	at org.eclipse.acceleo.ide.ui.launching.strategy.AcceleoPluginLaunchingStrategy.launch(AcceleoPluginLaunchingStrategy.java:128)
+	at org.eclipse.acceleo.internal.ide.ui.launching.AcceleoLaunchDelegate.launch(AcceleoLaunchDelegate.java:51)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:928)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1132)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.acceleo.engine 2 2 2011-10-23 14:52:07.926
+!MESSAGE Couldn't evaluate URL of the file at line 8 in Module generateHello for block file(false, 'UTF-8'). Last recorded value of self was org.eclipse.emf.ecore.impl.EClassImpl@137593c (name: Gehege) (instanceClassName: null) (abstract: false, interface: false).
+!STACK 0
+org.eclipse.acceleo.engine.AcceleoEvaluationException: Couldn't evaluate URL of the file at line 8 in Module generateHello for block file(false, 'UTF-8'). Last recorded value of self was org.eclipse.emf.ecore.impl.EClassImpl@137593c (name: Gehege) (instanceClassName: null) (abstract: false, interface: false).
+	at generateHello.generateHello(EClass)(generateHello.mtl:8)
+	at generateHello.generateHello(EClass)(generateHello.mtl:4)
+
+!ENTRY org.eclipse.acceleo.engine 2 2 2011-10-23 14:52:07.960
+!MESSAGE Unresolved compilation error in generation module.
+!STACK 0
+org.eclipse.acceleo.engine.AcceleoEvaluationException: Unresolved compilation error in generation module.
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.switchExpression(AcceleoEvaluationVisitor.java:1663)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.visitExpression(AcceleoEvaluationVisitor.java:999)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.visitAcceleoFileBlock(AcceleoEvaluationVisitor.java:338)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.switchExpression(AcceleoEvaluationVisitor.java:1691)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.visitExpression(AcceleoEvaluationVisitor.java:999)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.visitAcceleoTemplate(AcceleoEvaluationVisitor.java:867)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.switchExpression(AcceleoEvaluationVisitor.java:1671)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.visitExpression(AcceleoEvaluationVisitor.java:999)
+	at org.eclipse.ocl.internal.evaluation.QueryImpl.evaluate(QueryImpl.java:152)
+	at org.eclipse.ocl.ecore.QueryImpl.evaluate(QueryImpl.java:62)
+	at org.eclipse.acceleo.engine.generation.AcceleoEngine.doEvaluate(AcceleoEngine.java:280)
+	at org.eclipse.acceleo.engine.generation.AcceleoEngine.evaluate(AcceleoEngine.java:145)
+	at org.eclipse.acceleo.engine.service.AcceleoService.doGenerateTemplate(AcceleoService.java:869)
+	at org.eclipse.acceleo.engine.service.AcceleoService.doGenerate(AcceleoService.java:585)
+	at org.eclipse.acceleo.engine.service.AbstractAcceleoGenerator.generate(AbstractAcceleoGenerator.java:188)
+	at org.eclipse.acceleo.engine.service.AbstractAcceleoGenerator.doGenerate(AbstractAcceleoGenerator.java:158)
+	at org.bazinga.Model.files.GenerateHello.doGenerate(GenerateHello.java:190)
+	at org.eclipse.acceleo.ide.ui.launching.strategy.AcceleoLaunchOperation.run(AcceleoLaunchOperation.java:133)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2326)
+	at org.eclipse.acceleo.ide.ui.launching.strategy.AcceleoPluginLaunchingStrategy.launch(AcceleoPluginLaunchingStrategy.java:225)
+	at org.eclipse.acceleo.ide.ui.launching.strategy.AcceleoPluginLaunchingStrategy.launch(AcceleoPluginLaunchingStrategy.java:128)
+	at org.eclipse.acceleo.internal.ide.ui.launching.AcceleoLaunchDelegate.launch(AcceleoLaunchDelegate.java:51)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:928)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1132)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.acceleo.engine 2 2 2011-10-23 14:52:07.961
+!MESSAGE Couldn't evaluate URL of the file at line 8 in Module generateHello for block file(false, 'UTF-8'). Last recorded value of self was org.eclipse.emf.ecore.impl.EClassImpl@c3b25d (name: Pfleger) (instanceClassName: null) (abstract: false, interface: false).
+!STACK 0
+org.eclipse.acceleo.engine.AcceleoEvaluationException: Couldn't evaluate URL of the file at line 8 in Module generateHello for block file(false, 'UTF-8'). Last recorded value of self was org.eclipse.emf.ecore.impl.EClassImpl@c3b25d (name: Pfleger) (instanceClassName: null) (abstract: false, interface: false).
+	at generateHello.generateHello(EClass)(generateHello.mtl:8)
+	at generateHello.generateHello(EClass)(generateHello.mtl:4)
+
+!ENTRY org.eclipse.acceleo.engine 2 2 2011-10-23 14:52:07.994
+!MESSAGE Unresolved compilation error in generation module.
+!STACK 0
+org.eclipse.acceleo.engine.AcceleoEvaluationException: Unresolved compilation error in generation module.
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.switchExpression(AcceleoEvaluationVisitor.java:1663)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.visitExpression(AcceleoEvaluationVisitor.java:999)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.visitAcceleoFileBlock(AcceleoEvaluationVisitor.java:338)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.switchExpression(AcceleoEvaluationVisitor.java:1691)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.visitExpression(AcceleoEvaluationVisitor.java:999)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.visitAcceleoTemplate(AcceleoEvaluationVisitor.java:867)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.switchExpression(AcceleoEvaluationVisitor.java:1671)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.visitExpression(AcceleoEvaluationVisitor.java:999)
+	at org.eclipse.ocl.internal.evaluation.QueryImpl.evaluate(QueryImpl.java:152)
+	at org.eclipse.ocl.ecore.QueryImpl.evaluate(QueryImpl.java:62)
+	at org.eclipse.acceleo.engine.generation.AcceleoEngine.doEvaluate(AcceleoEngine.java:280)
+	at org.eclipse.acceleo.engine.generation.AcceleoEngine.evaluate(AcceleoEngine.java:145)
+	at org.eclipse.acceleo.engine.service.AcceleoService.doGenerateTemplate(AcceleoService.java:869)
+	at org.eclipse.acceleo.engine.service.AcceleoService.doGenerate(AcceleoService.java:585)
+	at org.eclipse.acceleo.engine.service.AbstractAcceleoGenerator.generate(AbstractAcceleoGenerator.java:188)
+	at org.eclipse.acceleo.engine.service.AbstractAcceleoGenerator.doGenerate(AbstractAcceleoGenerator.java:158)
+	at org.bazinga.Model.files.GenerateHello.doGenerate(GenerateHello.java:190)
+	at org.eclipse.acceleo.ide.ui.launching.strategy.AcceleoLaunchOperation.run(AcceleoLaunchOperation.java:133)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2326)
+	at org.eclipse.acceleo.ide.ui.launching.strategy.AcceleoPluginLaunchingStrategy.launch(AcceleoPluginLaunchingStrategy.java:225)
+	at org.eclipse.acceleo.ide.ui.launching.strategy.AcceleoPluginLaunchingStrategy.launch(AcceleoPluginLaunchingStrategy.java:128)
+	at org.eclipse.acceleo.internal.ide.ui.launching.AcceleoLaunchDelegate.launch(AcceleoLaunchDelegate.java:51)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:928)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1132)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.acceleo.engine 2 2 2011-10-23 14:52:07.995
+!MESSAGE Couldn't evaluate URL of the file at line 8 in Module generateHello for block file(false, 'UTF-8'). Last recorded value of self was org.eclipse.emf.ecore.impl.EClassImpl@1f316d5 (name: Tier) (instanceClassName: null) (abstract: false, interface: false).
+!STACK 0
+org.eclipse.acceleo.engine.AcceleoEvaluationException: Couldn't evaluate URL of the file at line 8 in Module generateHello for block file(false, 'UTF-8'). Last recorded value of self was org.eclipse.emf.ecore.impl.EClassImpl@1f316d5 (name: Tier) (instanceClassName: null) (abstract: false, interface: false).
+	at generateHello.generateHello(EClass)(generateHello.mtl:8)
+	at generateHello.generateHello(EClass)(generateHello.mtl:4)
+
+!ENTRY org.eclipse.acceleo.engine 2 2 2011-10-23 14:52:08.028
+!MESSAGE Unresolved compilation error in generation module.
+!STACK 0
+org.eclipse.acceleo.engine.AcceleoEvaluationException: Unresolved compilation error in generation module.
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.switchExpression(AcceleoEvaluationVisitor.java:1663)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.visitExpression(AcceleoEvaluationVisitor.java:999)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.visitAcceleoFileBlock(AcceleoEvaluationVisitor.java:338)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.switchExpression(AcceleoEvaluationVisitor.java:1691)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.visitExpression(AcceleoEvaluationVisitor.java:999)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.visitAcceleoTemplate(AcceleoEvaluationVisitor.java:867)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.switchExpression(AcceleoEvaluationVisitor.java:1671)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.visitExpression(AcceleoEvaluationVisitor.java:999)
+	at org.eclipse.ocl.internal.evaluation.QueryImpl.evaluate(QueryImpl.java:152)
+	at org.eclipse.ocl.ecore.QueryImpl.evaluate(QueryImpl.java:62)
+	at org.eclipse.acceleo.engine.generation.AcceleoEngine.doEvaluate(AcceleoEngine.java:280)
+	at org.eclipse.acceleo.engine.generation.AcceleoEngine.evaluate(AcceleoEngine.java:145)
+	at org.eclipse.acceleo.engine.service.AcceleoService.doGenerateTemplate(AcceleoService.java:869)
+	at org.eclipse.acceleo.engine.service.AcceleoService.doGenerate(AcceleoService.java:585)
+	at org.eclipse.acceleo.engine.service.AbstractAcceleoGenerator.generate(AbstractAcceleoGenerator.java:188)
+	at org.eclipse.acceleo.engine.service.AbstractAcceleoGenerator.doGenerate(AbstractAcceleoGenerator.java:158)
+	at org.bazinga.Model.files.GenerateHello.doGenerate(GenerateHello.java:190)
+	at org.eclipse.acceleo.ide.ui.launching.strategy.AcceleoLaunchOperation.run(AcceleoLaunchOperation.java:133)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2326)
+	at org.eclipse.acceleo.ide.ui.launching.strategy.AcceleoPluginLaunchingStrategy.launch(AcceleoPluginLaunchingStrategy.java:225)
+	at org.eclipse.acceleo.ide.ui.launching.strategy.AcceleoPluginLaunchingStrategy.launch(AcceleoPluginLaunchingStrategy.java:128)
+	at org.eclipse.acceleo.internal.ide.ui.launching.AcceleoLaunchDelegate.launch(AcceleoLaunchDelegate.java:51)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:928)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1132)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.acceleo.engine 2 2 2011-10-23 14:52:08.029
+!MESSAGE Couldn't evaluate URL of the file at line 8 in Module generateHello for block file(false, 'UTF-8'). Last recorded value of self was org.eclipse.emf.ecore.impl.EClassImpl@602501 (name: Besucher) (instanceClassName: null) (abstract: false, interface: false).
+!STACK 0
+org.eclipse.acceleo.engine.AcceleoEvaluationException: Couldn't evaluate URL of the file at line 8 in Module generateHello for block file(false, 'UTF-8'). Last recorded value of self was org.eclipse.emf.ecore.impl.EClassImpl@602501 (name: Besucher) (instanceClassName: null) (abstract: false, interface: false).
+	at generateHello.generateHello(EClass)(generateHello.mtl:8)
+	at generateHello.generateHello(EClass)(generateHello.mtl:4)
+
+!ENTRY org.eclipse.acceleo.engine 2 2 2011-10-23 14:52:08.062
+!MESSAGE Unresolved compilation error in generation module.
+!STACK 0
+org.eclipse.acceleo.engine.AcceleoEvaluationException: Unresolved compilation error in generation module.
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.switchExpression(AcceleoEvaluationVisitor.java:1663)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.visitExpression(AcceleoEvaluationVisitor.java:999)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.visitAcceleoFileBlock(AcceleoEvaluationVisitor.java:338)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.switchExpression(AcceleoEvaluationVisitor.java:1691)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.visitExpression(AcceleoEvaluationVisitor.java:999)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.visitAcceleoTemplate(AcceleoEvaluationVisitor.java:867)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.switchExpression(AcceleoEvaluationVisitor.java:1671)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.visitExpression(AcceleoEvaluationVisitor.java:999)
+	at org.eclipse.ocl.internal.evaluation.QueryImpl.evaluate(QueryImpl.java:152)
+	at org.eclipse.ocl.ecore.QueryImpl.evaluate(QueryImpl.java:62)
+	at org.eclipse.acceleo.engine.generation.AcceleoEngine.doEvaluate(AcceleoEngine.java:280)
+	at org.eclipse.acceleo.engine.generation.AcceleoEngine.evaluate(AcceleoEngine.java:145)
+	at org.eclipse.acceleo.engine.service.AcceleoService.doGenerateTemplate(AcceleoService.java:869)
+	at org.eclipse.acceleo.engine.service.AcceleoService.doGenerate(AcceleoService.java:585)
+	at org.eclipse.acceleo.engine.service.AbstractAcceleoGenerator.generate(AbstractAcceleoGenerator.java:188)
+	at org.eclipse.acceleo.engine.service.AbstractAcceleoGenerator.doGenerate(AbstractAcceleoGenerator.java:158)
+	at org.bazinga.Model.files.GenerateHello.doGenerate(GenerateHello.java:190)
+	at org.eclipse.acceleo.ide.ui.launching.strategy.AcceleoLaunchOperation.run(AcceleoLaunchOperation.java:133)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2326)
+	at org.eclipse.acceleo.ide.ui.launching.strategy.AcceleoPluginLaunchingStrategy.launch(AcceleoPluginLaunchingStrategy.java:225)
+	at org.eclipse.acceleo.ide.ui.launching.strategy.AcceleoPluginLaunchingStrategy.launch(AcceleoPluginLaunchingStrategy.java:128)
+	at org.eclipse.acceleo.internal.ide.ui.launching.AcceleoLaunchDelegate.launch(AcceleoLaunchDelegate.java:51)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:928)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1132)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.acceleo.engine 2 2 2011-10-23 14:52:08.062
+!MESSAGE Couldn't evaluate URL of the file at line 8 in Module generateHello for block file(false, 'UTF-8'). Last recorded value of self was org.eclipse.emf.ecore.impl.EClassImpl@1da472 (name: Kasse) (instanceClassName: null) (abstract: false, interface: false).
+!STACK 0
+org.eclipse.acceleo.engine.AcceleoEvaluationException: Couldn't evaluate URL of the file at line 8 in Module generateHello for block file(false, 'UTF-8'). Last recorded value of self was org.eclipse.emf.ecore.impl.EClassImpl@1da472 (name: Kasse) (instanceClassName: null) (abstract: false, interface: false).
+	at generateHello.generateHello(EClass)(generateHello.mtl:8)
+	at generateHello.generateHello(EClass)(generateHello.mtl:4)
+
+!ENTRY org.eclipse.acceleo.engine 2 2 2011-10-23 14:52:08.096
+!MESSAGE Unresolved compilation error in generation module.
+!STACK 0
+org.eclipse.acceleo.engine.AcceleoEvaluationException: Unresolved compilation error in generation module.
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.switchExpression(AcceleoEvaluationVisitor.java:1663)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.visitExpression(AcceleoEvaluationVisitor.java:999)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.visitAcceleoFileBlock(AcceleoEvaluationVisitor.java:338)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.switchExpression(AcceleoEvaluationVisitor.java:1691)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.visitExpression(AcceleoEvaluationVisitor.java:999)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.visitAcceleoTemplate(AcceleoEvaluationVisitor.java:867)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.switchExpression(AcceleoEvaluationVisitor.java:1671)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.visitExpression(AcceleoEvaluationVisitor.java:999)
+	at org.eclipse.ocl.internal.evaluation.QueryImpl.evaluate(QueryImpl.java:152)
+	at org.eclipse.ocl.ecore.QueryImpl.evaluate(QueryImpl.java:62)
+	at org.eclipse.acceleo.engine.generation.AcceleoEngine.doEvaluate(AcceleoEngine.java:280)
+	at org.eclipse.acceleo.engine.generation.AcceleoEngine.evaluate(AcceleoEngine.java:145)
+	at org.eclipse.acceleo.engine.service.AcceleoService.doGenerateTemplate(AcceleoService.java:869)
+	at org.eclipse.acceleo.engine.service.AcceleoService.doGenerate(AcceleoService.java:585)
+	at org.eclipse.acceleo.engine.service.AbstractAcceleoGenerator.generate(AbstractAcceleoGenerator.java:188)
+	at org.eclipse.acceleo.engine.service.AbstractAcceleoGenerator.doGenerate(AbstractAcceleoGenerator.java:158)
+	at org.bazinga.Model.files.GenerateHello.doGenerate(GenerateHello.java:190)
+	at org.eclipse.acceleo.ide.ui.launching.strategy.AcceleoLaunchOperation.run(AcceleoLaunchOperation.java:133)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2326)
+	at org.eclipse.acceleo.ide.ui.launching.strategy.AcceleoPluginLaunchingStrategy.launch(AcceleoPluginLaunchingStrategy.java:225)
+	at org.eclipse.acceleo.ide.ui.launching.strategy.AcceleoPluginLaunchingStrategy.launch(AcceleoPluginLaunchingStrategy.java:128)
+	at org.eclipse.acceleo.internal.ide.ui.launching.AcceleoLaunchDelegate.launch(AcceleoLaunchDelegate.java:51)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:928)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1132)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.acceleo.engine 2 2 2011-10-23 14:52:08.096
+!MESSAGE Couldn't evaluate URL of the file at line 8 in Module generateHello for block file(false, 'UTF-8'). Last recorded value of self was org.eclipse.emf.ecore.impl.EClassImpl@173e94 (name: Tiger) (instanceClassName: null) (abstract: false, interface: false).
+!STACK 0
+org.eclipse.acceleo.engine.AcceleoEvaluationException: Couldn't evaluate URL of the file at line 8 in Module generateHello for block file(false, 'UTF-8'). Last recorded value of self was org.eclipse.emf.ecore.impl.EClassImpl@173e94 (name: Tiger) (instanceClassName: null) (abstract: false, interface: false).
+	at generateHello.generateHello(EClass)(generateHello.mtl:8)
+	at generateHello.generateHello(EClass)(generateHello.mtl:4)
+
+!ENTRY org.eclipse.acceleo.engine 2 2 2011-10-23 14:52:08.232
+!MESSAGE Unresolved compilation error in generation module.
+!STACK 0
+org.eclipse.acceleo.engine.AcceleoEvaluationException: Unresolved compilation error in generation module.
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.switchExpression(AcceleoEvaluationVisitor.java:1663)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.visitExpression(AcceleoEvaluationVisitor.java:999)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.visitAcceleoFileBlock(AcceleoEvaluationVisitor.java:338)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.switchExpression(AcceleoEvaluationVisitor.java:1691)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.visitExpression(AcceleoEvaluationVisitor.java:999)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.visitAcceleoTemplate(AcceleoEvaluationVisitor.java:867)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.switchExpression(AcceleoEvaluationVisitor.java:1671)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.visitExpression(AcceleoEvaluationVisitor.java:999)
+	at org.eclipse.ocl.internal.evaluation.QueryImpl.evaluate(QueryImpl.java:152)
+	at org.eclipse.ocl.ecore.QueryImpl.evaluate(QueryImpl.java:62)
+	at org.eclipse.acceleo.engine.generation.AcceleoEngine.doEvaluate(AcceleoEngine.java:280)
+	at org.eclipse.acceleo.engine.generation.AcceleoEngine.evaluate(AcceleoEngine.java:145)
+	at org.eclipse.acceleo.engine.service.AcceleoService.doGenerateTemplate(AcceleoService.java:869)
+	at org.eclipse.acceleo.engine.service.AcceleoService.doGenerate(AcceleoService.java:585)
+	at org.eclipse.acceleo.engine.service.AbstractAcceleoGenerator.generate(AbstractAcceleoGenerator.java:188)
+	at org.eclipse.acceleo.engine.service.AbstractAcceleoGenerator.doGenerate(AbstractAcceleoGenerator.java:158)
+	at org.bazinga.Model.files.GenerateHello.doGenerate(GenerateHello.java:190)
+	at org.eclipse.acceleo.ide.ui.launching.strategy.AcceleoLaunchOperation.run(AcceleoLaunchOperation.java:133)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2326)
+	at org.eclipse.acceleo.ide.ui.launching.strategy.AcceleoPluginLaunchingStrategy.launch(AcceleoPluginLaunchingStrategy.java:225)
+	at org.eclipse.acceleo.ide.ui.launching.strategy.AcceleoPluginLaunchingStrategy.launch(AcceleoPluginLaunchingStrategy.java:128)
+	at org.eclipse.acceleo.internal.ide.ui.launching.AcceleoLaunchDelegate.launch(AcceleoLaunchDelegate.java:51)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:928)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1132)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.acceleo.engine 2 2 2011-10-23 14:52:08.232
+!MESSAGE Couldn't evaluate URL of the file at line 8 in Module generateHello for block file(false, 'UTF-8'). Last recorded value of self was org.eclipse.emf.ecore.impl.EClassImpl@429ab5 (name: Pony) (instanceClassName: null) (abstract: false, interface: false).
+!STACK 0
+org.eclipse.acceleo.engine.AcceleoEvaluationException: Couldn't evaluate URL of the file at line 8 in Module generateHello for block file(false, 'UTF-8'). Last recorded value of self was org.eclipse.emf.ecore.impl.EClassImpl@429ab5 (name: Pony) (instanceClassName: null) (abstract: false, interface: false).
+	at generateHello.generateHello(EClass)(generateHello.mtl:8)
+	at generateHello.generateHello(EClass)(generateHello.mtl:4)
+
+!ENTRY org.eclipse.acceleo.engine 2 2 2011-10-23 14:52:08.266
+!MESSAGE Unresolved compilation error in generation module.
+!STACK 0
+org.eclipse.acceleo.engine.AcceleoEvaluationException: Unresolved compilation error in generation module.
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.switchExpression(AcceleoEvaluationVisitor.java:1663)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.visitExpression(AcceleoEvaluationVisitor.java:999)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.visitAcceleoFileBlock(AcceleoEvaluationVisitor.java:338)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.switchExpression(AcceleoEvaluationVisitor.java:1691)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.visitExpression(AcceleoEvaluationVisitor.java:999)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.visitAcceleoTemplate(AcceleoEvaluationVisitor.java:867)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.switchExpression(AcceleoEvaluationVisitor.java:1671)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.visitExpression(AcceleoEvaluationVisitor.java:999)
+	at org.eclipse.ocl.internal.evaluation.QueryImpl.evaluate(QueryImpl.java:152)
+	at org.eclipse.ocl.ecore.QueryImpl.evaluate(QueryImpl.java:62)
+	at org.eclipse.acceleo.engine.generation.AcceleoEngine.doEvaluate(AcceleoEngine.java:280)
+	at org.eclipse.acceleo.engine.generation.AcceleoEngine.evaluate(AcceleoEngine.java:145)
+	at org.eclipse.acceleo.engine.service.AcceleoService.doGenerateTemplate(AcceleoService.java:869)
+	at org.eclipse.acceleo.engine.service.AcceleoService.doGenerate(AcceleoService.java:585)
+	at org.eclipse.acceleo.engine.service.AbstractAcceleoGenerator.generate(AbstractAcceleoGenerator.java:188)
+	at org.eclipse.acceleo.engine.service.AbstractAcceleoGenerator.doGenerate(AbstractAcceleoGenerator.java:158)
+	at org.bazinga.Model.files.GenerateHello.doGenerate(GenerateHello.java:190)
+	at org.eclipse.acceleo.ide.ui.launching.strategy.AcceleoLaunchOperation.run(AcceleoLaunchOperation.java:133)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2326)
+	at org.eclipse.acceleo.ide.ui.launching.strategy.AcceleoPluginLaunchingStrategy.launch(AcceleoPluginLaunchingStrategy.java:225)
+	at org.eclipse.acceleo.ide.ui.launching.strategy.AcceleoPluginLaunchingStrategy.launch(AcceleoPluginLaunchingStrategy.java:128)
+	at org.eclipse.acceleo.internal.ide.ui.launching.AcceleoLaunchDelegate.launch(AcceleoLaunchDelegate.java:51)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:928)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1132)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.acceleo.engine 2 2 2011-10-23 14:52:08.267
+!MESSAGE Couldn't evaluate URL of the file at line 8 in Module generateHello for block file(false, 'UTF-8'). Last recorded value of self was org.eclipse.emf.ecore.impl.EClassImpl@bae448 (name: Futterlager) (instanceClassName: null) (abstract: false, interface: false).
+!STACK 0
+org.eclipse.acceleo.engine.AcceleoEvaluationException: Couldn't evaluate URL of the file at line 8 in Module generateHello for block file(false, 'UTF-8'). Last recorded value of self was org.eclipse.emf.ecore.impl.EClassImpl@bae448 (name: Futterlager) (instanceClassName: null) (abstract: false, interface: false).
+	at generateHello.generateHello(EClass)(generateHello.mtl:8)
+	at generateHello.generateHello(EClass)(generateHello.mtl:4)
+
+!ENTRY org.eclipse.acceleo.engine 2 2 2011-10-23 14:52:08.300
+!MESSAGE Unresolved compilation error in generation module.
+!STACK 0
+org.eclipse.acceleo.engine.AcceleoEvaluationException: Unresolved compilation error in generation module.
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.switchExpression(AcceleoEvaluationVisitor.java:1663)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.visitExpression(AcceleoEvaluationVisitor.java:999)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.visitAcceleoFileBlock(AcceleoEvaluationVisitor.java:338)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.switchExpression(AcceleoEvaluationVisitor.java:1691)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.visitExpression(AcceleoEvaluationVisitor.java:999)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.visitAcceleoTemplate(AcceleoEvaluationVisitor.java:867)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.switchExpression(AcceleoEvaluationVisitor.java:1671)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.visitExpression(AcceleoEvaluationVisitor.java:999)
+	at org.eclipse.ocl.internal.evaluation.QueryImpl.evaluate(QueryImpl.java:152)
+	at org.eclipse.ocl.ecore.QueryImpl.evaluate(QueryImpl.java:62)
+	at org.eclipse.acceleo.engine.generation.AcceleoEngine.doEvaluate(AcceleoEngine.java:280)
+	at org.eclipse.acceleo.engine.generation.AcceleoEngine.evaluate(AcceleoEngine.java:145)
+	at org.eclipse.acceleo.engine.service.AcceleoService.doGenerateTemplate(AcceleoService.java:869)
+	at org.eclipse.acceleo.engine.service.AcceleoService.doGenerate(AcceleoService.java:585)
+	at org.eclipse.acceleo.engine.service.AbstractAcceleoGenerator.generate(AbstractAcceleoGenerator.java:188)
+	at org.eclipse.acceleo.engine.service.AbstractAcceleoGenerator.doGenerate(AbstractAcceleoGenerator.java:158)
+	at org.bazinga.Model.files.GenerateHello.doGenerate(GenerateHello.java:190)
+	at org.eclipse.acceleo.ide.ui.launching.strategy.AcceleoLaunchOperation.run(AcceleoLaunchOperation.java:133)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2326)
+	at org.eclipse.acceleo.ide.ui.launching.strategy.AcceleoPluginLaunchingStrategy.launch(AcceleoPluginLaunchingStrategy.java:225)
+	at org.eclipse.acceleo.ide.ui.launching.strategy.AcceleoPluginLaunchingStrategy.launch(AcceleoPluginLaunchingStrategy.java:128)
+	at org.eclipse.acceleo.internal.ide.ui.launching.AcceleoLaunchDelegate.launch(AcceleoLaunchDelegate.java:51)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:928)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1132)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.acceleo.engine 2 2 2011-10-23 14:52:08.300
+!MESSAGE Couldn't evaluate URL of the file at line 8 in Module generateHello for block file(false, 'UTF-8'). Last recorded value of self was org.eclipse.emf.ecore.impl.EClassImpl@1e173f8 (name: Direktor) (instanceClassName: null) (abstract: false, interface: false).
+!STACK 0
+org.eclipse.acceleo.engine.AcceleoEvaluationException: Couldn't evaluate URL of the file at line 8 in Module generateHello for block file(false, 'UTF-8'). Last recorded value of self was org.eclipse.emf.ecore.impl.EClassImpl@1e173f8 (name: Direktor) (instanceClassName: null) (abstract: false, interface: false).
+	at generateHello.generateHello(EClass)(generateHello.mtl:8)
+	at generateHello.generateHello(EClass)(generateHello.mtl:4)
+
+!ENTRY org.eclipse.acceleo.engine 2 2 2011-10-23 14:52:08.334
+!MESSAGE Unresolved compilation error in generation module.
+!STACK 0
+org.eclipse.acceleo.engine.AcceleoEvaluationException: Unresolved compilation error in generation module.
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.switchExpression(AcceleoEvaluationVisitor.java:1663)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.visitExpression(AcceleoEvaluationVisitor.java:999)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.visitAcceleoFileBlock(AcceleoEvaluationVisitor.java:338)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.switchExpression(AcceleoEvaluationVisitor.java:1691)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.visitExpression(AcceleoEvaluationVisitor.java:999)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.visitAcceleoTemplate(AcceleoEvaluationVisitor.java:867)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.switchExpression(AcceleoEvaluationVisitor.java:1671)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.visitExpression(AcceleoEvaluationVisitor.java:999)
+	at org.eclipse.ocl.internal.evaluation.QueryImpl.evaluate(QueryImpl.java:152)
+	at org.eclipse.ocl.ecore.QueryImpl.evaluate(QueryImpl.java:62)
+	at org.eclipse.acceleo.engine.generation.AcceleoEngine.doEvaluate(AcceleoEngine.java:280)
+	at org.eclipse.acceleo.engine.generation.AcceleoEngine.evaluate(AcceleoEngine.java:145)
+	at org.eclipse.acceleo.engine.service.AcceleoService.doGenerateTemplate(AcceleoService.java:869)
+	at org.eclipse.acceleo.engine.service.AcceleoService.doGenerate(AcceleoService.java:585)
+	at org.eclipse.acceleo.engine.service.AbstractAcceleoGenerator.generate(AbstractAcceleoGenerator.java:188)
+	at org.eclipse.acceleo.engine.service.AbstractAcceleoGenerator.doGenerate(AbstractAcceleoGenerator.java:158)
+	at org.bazinga.Model.files.GenerateHello.doGenerate(GenerateHello.java:190)
+	at org.eclipse.acceleo.ide.ui.launching.strategy.AcceleoLaunchOperation.run(AcceleoLaunchOperation.java:133)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2326)
+	at org.eclipse.acceleo.ide.ui.launching.strategy.AcceleoPluginLaunchingStrategy.launch(AcceleoPluginLaunchingStrategy.java:225)
+	at org.eclipse.acceleo.ide.ui.launching.strategy.AcceleoPluginLaunchingStrategy.launch(AcceleoPluginLaunchingStrategy.java:128)
+	at org.eclipse.acceleo.internal.ide.ui.launching.AcceleoLaunchDelegate.launch(AcceleoLaunchDelegate.java:51)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:928)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1132)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.acceleo.engine 2 2 2011-10-23 14:52:08.334
+!MESSAGE Couldn't evaluate URL of the file at line 8 in Module generateHello for block file(false, 'UTF-8'). Last recorded value of self was org.eclipse.emf.ecore.impl.EClassImpl@84af22 (name: Fleischfresser) (instanceClassName: null) (abstract: false, interface: true).
+!STACK 0
+org.eclipse.acceleo.engine.AcceleoEvaluationException: Couldn't evaluate URL of the file at line 8 in Module generateHello for block file(false, 'UTF-8'). Last recorded value of self was org.eclipse.emf.ecore.impl.EClassImpl@84af22 (name: Fleischfresser) (instanceClassName: null) (abstract: false, interface: true).
+	at generateHello.generateHello(EClass)(generateHello.mtl:8)
+	at generateHello.generateHello(EClass)(generateHello.mtl:4)
+
+!ENTRY org.eclipse.acceleo.engine 2 2 2011-10-23 14:52:08.367
+!MESSAGE Unresolved compilation error in generation module.
+!STACK 0
+org.eclipse.acceleo.engine.AcceleoEvaluationException: Unresolved compilation error in generation module.
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.switchExpression(AcceleoEvaluationVisitor.java:1663)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.visitExpression(AcceleoEvaluationVisitor.java:999)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.visitAcceleoFileBlock(AcceleoEvaluationVisitor.java:338)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.switchExpression(AcceleoEvaluationVisitor.java:1691)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.visitExpression(AcceleoEvaluationVisitor.java:999)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.visitAcceleoTemplate(AcceleoEvaluationVisitor.java:867)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.switchExpression(AcceleoEvaluationVisitor.java:1671)
+	at org.eclipse.acceleo.engine.internal.evaluation.AcceleoEvaluationVisitor.visitExpression(AcceleoEvaluationVisitor.java:999)
+	at org.eclipse.ocl.internal.evaluation.QueryImpl.evaluate(QueryImpl.java:152)
+	at org.eclipse.ocl.ecore.QueryImpl.evaluate(QueryImpl.java:62)
+	at org.eclipse.acceleo.engine.generation.AcceleoEngine.doEvaluate(AcceleoEngine.java:280)
+	at org.eclipse.acceleo.engine.generation.AcceleoEngine.evaluate(AcceleoEngine.java:145)
+	at org.eclipse.acceleo.engine.service.AcceleoService.doGenerateTemplate(AcceleoService.java:869)
+	at org.eclipse.acceleo.engine.service.AcceleoService.doGenerate(AcceleoService.java:585)
+	at org.eclipse.acceleo.engine.service.AbstractAcceleoGenerator.generate(AbstractAcceleoGenerator.java:188)
+	at org.eclipse.acceleo.engine.service.AbstractAcceleoGenerator.doGenerate(AbstractAcceleoGenerator.java:158)
+	at org.bazinga.Model.files.GenerateHello.doGenerate(GenerateHello.java:190)
+	at org.eclipse.acceleo.ide.ui.launching.strategy.AcceleoLaunchOperation.run(AcceleoLaunchOperation.java:133)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2326)
+	at org.eclipse.acceleo.ide.ui.launching.strategy.AcceleoPluginLaunchingStrategy.launch(AcceleoPluginLaunchingStrategy.java:225)
+	at org.eclipse.acceleo.ide.ui.launching.strategy.AcceleoPluginLaunchingStrategy.launch(AcceleoPluginLaunchingStrategy.java:128)
+	at org.eclipse.acceleo.internal.ide.ui.launching.AcceleoLaunchDelegate.launch(AcceleoLaunchDelegate.java:51)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:928)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1132)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.acceleo.engine 2 2 2011-10-23 14:52:08.368
+!MESSAGE Couldn't evaluate URL of the file at line 8 in Module generateHello for block file(false, 'UTF-8'). Last recorded value of self was org.eclipse.emf.ecore.impl.EClassImpl@105e693 (name: Pflanzenfresser) (instanceClassName: null) (abstract: false, interface: true).
+!STACK 0
+org.eclipse.acceleo.engine.AcceleoEvaluationException: Couldn't evaluate URL of the file at line 8 in Module generateHello for block file(false, 'UTF-8'). Last recorded value of self was org.eclipse.emf.ecore.impl.EClassImpl@105e693 (name: Pflanzenfresser) (instanceClassName: null) (abstract: false, interface: true).
+	at generateHello.generateHello(EClass)(generateHello.mtl:8)
+	at generateHello.generateHello(EClass)(generateHello.mtl:4)
