@@ -8,6 +8,10 @@
 	[file (class.ePackage.name.replaceAll('\\.', '/').concat('/').concat(class.name.toUpperFirst()).concat('.java'), false, 'UTF-8')]
 package [class.ePackage.name /];
 
+[for (reference : EReference | class.eAllReferences) ]
+import [reference.eType.ePackage.name/].[reference.eType.name/];
+[/for]
+
 public [getStruct(class) /] [class.name.toUpperFirst()/] [getSuperClasses(class) /] {
 
 [generateAttributes(class) /]
