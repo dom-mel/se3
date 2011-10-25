@@ -1,0 +1,70 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{fullpage}
+\usepackage{csquotes}
+\usepackage[ngerman]{babel}
+\usepackage{biblatex}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{subfigure}
+\setcounter{secnumdepth}{-1} 
+\usepackage{hyperref}
+\usepackage{minted}
+\usemintedstyle{friendly}
+\bibliography{Dokumentation}
+\title{ZooMTL}
+\author{Gruppe Bazinga \\ Julian Heise, Matr.Nr.: 782691 \\ Dominik Eckelmann, Matr.Nr.: 785856 \\ Willi Schönborn, Matr.Nr.: 774190}
+\date{\today}
+\begin{document}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth]{beuth.eps}
+\maketitle
+\end{figure}
+
+\tableofcontents
+
+\newpage
+
+\section{Einleitung}
+Als Teil der Lehrveranstaltung \textit{Software Engineering Vertiefung} im Wintersemester 2011/2012 an der \textit{Beuth Hochschule für Technik Berlin} sollte im Rahmen einer Übung mithilfe der Eclipse-Plattform ein simpler Model-To-Text-Transformator geschrieben werden. Das Ziel dieses Dokumentes ist es die Ergebnisse und Erkenntnise dieser Übung in Form eines Lernprotokolls zusammenzufassen.
+
+\section{Thema}
+ECore-Modell (inkl/exkl Diagramm), Java-Code als Output, Generator in MTL, Zoo
+
+\section{Lernprotokoll}
+kein Diagramm, Modell-Editor (Baum-Editor) ist einfacher
+
+viele Properties (unique, ...), man braucht nicht alle
+
+MTL: ähnlich zu XML
+Schwächen einer Template-Engine: alles generiert Output
+relativ lesbare Aufrufe
+OCL ist mächtig, FP style, fluent API
+
+Strukturierter Quellcode als direkter Output ist umständlich: Imports etc verlangen, dass man viele Sachen doppelt macht
+Sammeln von Informationen muss oft wiederholt werden
+
+templates sind sinnvoll für kleine wiederkehrende Aufgaben (vgl. Funktionen/Methoden in normalen Programmiersprachen)
+templates printen sofort raus, keine return values
+
+lesbares Template vs lesbarer Quellcode, beides geht nicht
+
+Parameterisierung von Templates? Formatierung, spezielle Annotations, etc
+
+reusable MTL templates?
+
+\addcontentsline{toc}{section}{Literatur}
+\printbibliography
+
+\addcontentsline{toc}{section}{Abbildungsverzeichnis}
+\listoffigures
+
+\addcontentsline{toc}{section}{Quellcodeverzeichnis}
+\renewcommand\listoflistingscaption{Quellcodeverzeichnis}
+\listoflistings
+
+\end{document}
+
