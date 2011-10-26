@@ -8,6 +8,7 @@ BAZINGA_app/src_gen/*
 /latex/*.fdb_latexmk
 /latex/*.lof
 /latex/*.lol
+/latex/*.log
 /latex/*.mp
 /latex/*.out
 /latex/*.pdf
